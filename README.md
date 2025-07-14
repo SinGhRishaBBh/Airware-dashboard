@@ -30,6 +30,39 @@ An AI-powered Air Quality Index (AQI) monitoring and forecasting dashboard using
 ---
 
 ## 📁 Folder Structure
+aqi-dashboard/
+├── frontend/                       # React frontend for AQI dashboard
+│   ├── public/
+│   ├── src/
+│   │   ├── components/             # Reusable React components
+│   │   ├── pages/                  # UI pages (Dashboard, Upload, History)
+│   │   ├── services/               # API integration services
+│   │   └── App.js
+│   └── package.json
+│
+├── backend/                        # FastAPI backend
+│   ├── api/                        # API routes and endpoints
+│   ├── models/                     # Pydantic models or DB schemas
+│   ├── ml/                         # Prediction scripts using LSTM/XGBoost
+│   ├── database/                   # MongoDB connection & queries
+│   ├── utils/                      # Helpers (e.g., CSV processing)
+│   └── main.py                     # FastAPI main app
+│
+├── ml_models/                      # Pretrained model files
+│   ├── lstm_model.h5
+│   └── xgboost_model.json
+│
+├── data/                           # Sample and user-uploaded datasets
+│   ├── sample_dataset.csv
+│   └── uploaded_data/
+│
+├── exports/                        # Exported prediction results
+│   └── predictions.csv
+│
+├── Dockerfile                      # Containerization support
+├── requirements.txt                # Python dependencies
+├── README.md                       # Project documentation
+└── LICENSE                         # MIT License
 
 
 ---
