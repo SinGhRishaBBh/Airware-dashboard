@@ -122,7 +122,7 @@ See the [`LICENSE`](./LICENSE) file for detailed terms.
 
 ## 📬 Contact
 
-- 📧 Email: [rishabhraj.ai@gmail.com](mailto:rishabhraj.ai@gmail.com)  
+- 📧 Email: [rishabh079singh@gmail.com](mailto:rishabh079singh@gmail.com)  
 - 🌍 Website: _coming soon_  
 - 🏫 Institution: Central University of South Bihar (CUSB)
 
