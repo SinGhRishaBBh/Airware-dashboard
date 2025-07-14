@@ -1,0 +1,101 @@
+============================
+AQI Dashboard Project Overview
+============================
+
+This document provides a comprehensive overview of the AQI Dashboard project, including its dependencies and the structure/purpose of its main files and directories. It is intended to help new developers quickly get up to speed.
+
+---
+
+1. DEPENDENCIES
+----------------
+
+**Core Frameworks & Libraries:**
+- next: React framework for server-side rendering, routing, and static site generation.
+- react, react-dom: Core React libraries for building user interfaces.
+- typescript: Adds static typing to JavaScript for safer, more robust code.
+
+**UI & Styling:**
+- tailwindcss: Utility-first CSS framework for rapid UI development.
+- tailwindcss-animate: Animation utilities for Tailwind CSS.
+- tailwind-merge: Utility to intelligently merge Tailwind CSS classes.
+- @radix-ui/*: Suite of accessible, unstyled UI primitives (accordion, dialog, menu, etc.).
+- lucide-react: Icon library for React.
+- sonner: Toast notification library.
+- class-variance-authority, clsx: Utilities for conditional class name management.
+
+**Forms & Validation:**
+- react-hook-form: Performant, flexible form state management.
+- @hookform/resolvers: Integrates external validation libraries with react-hook-form.
+- zod: TypeScript-first schema validation library.
+
+**Date & Data Handling:**
+- date-fns: Modern JavaScript date utility library.
+- papaparse: Fast CSV parsing library.
+- xlsx: Library for parsing and writing Excel files.
+
+**Charts & Visualization:**
+- recharts: Composable charting library built on React components.
+- embla-carousel-react: Carousel/slider component for React.
+
+**State & Theme:**
+- next-themes: Theme management (e.g., dark/light mode) for Next.js apps.
+
+**Database:**
+- mongoose: Elegant MongoDB object modeling for Node.js.
+
+**Other Utilities:**
+- cmdk: Command menu component for React.
+- vaul: Drawer (slide-over panel) component.
+- react-day-picker: Flexible date picker component.
+- react-resizable-panels: Resizable panel layouts for React.
+- input-otp: OTP (One-Time Password) input component.
+
+**Dev Dependencies:**
+- @types/*: TypeScript type definitions for various libraries.
+- postcss: Tool for transforming CSS with JavaScript plugins.
+
+---
+
+2. PROJECT STRUCTURE & FILE DESCRIPTIONS
+-----------------------------------------
+
+**app/**
+  - Main Next.js app directory. Contains all routes, pages, and API endpoints.
+  - about/, contact/, dashboard/, map/, predictions/, privacy/, terms/, upload/, compare/: Each folder contains a `page.tsx` file representing a specific route/page in the app.
+  - api/: Serverless API endpoints for data, uploads, and city trends.
+  - globals.css: Global CSS styles for the app.
+  - layout.tsx: Main layout wrapper for all pages.
+
+**components/**
+  - Reusable React components for the dashboard and UI.
+  - aqi-prediction-chart.tsx, aqi-trends.tsx, city-comparison-chart.tsx, current-aqi.tsx, health-advice.tsx, model-metrics-card.tsx, model-selection.tsx, pollutant-breakdown.tsx, pollutant-comparison-chart.tsx: Custom components for AQI data visualization and features.
+  - theme-provider.tsx: Handles theme switching (e.g., dark/light mode).
+  - ui/: UI primitives (accordion, button, card, dialog, etc.), likely wrappers around Radix UI components.
+
+**hooks/**
+  - Custom React hooks for shared logic (e.g., use-mobile, use-toast).
+
+**lib/**
+  - Utility libraries and API logic.
+  - aqi-api.ts: Handles AQI data fetching and API integration.
+  - ml-models.ts: Contains logic for machine learning models and predictions.
+  - mongodb.ts: MongoDB connection and data access logic.
+  - utils.ts: General utility functions used throughout the app.
+
+**public/**
+  - Static assets such as images and logos.
+
+**styles/**
+  - Additional global styles (e.g., globals.css).
+
+**Configuration Files:**
+  - tailwind.config.ts: Tailwind CSS configuration.
+  - postcss.config.mjs: PostCSS configuration.
+  - tsconfig.json: TypeScript configuration.
+  - components.json: Configuration for the UI component system (shadcn/ui), including aliases and style settings.
+  - package.json: Lists all dependencies, scripts, and project metadata.
+  - pnpm-lock.yaml, package-lock.json: Lock files for dependency management.
+
+---
+
+If you need more details about any specific file or folder, please ask! 
