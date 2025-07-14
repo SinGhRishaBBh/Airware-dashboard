@@ -90,3 +90,64 @@ Let me know if you'd like:
 - Help pushing it to GitHub step-by-step
 
 I'm ready when you are!
+
+
+
+## 🧪 Usage
+
+1. **Upload your AQI dataset**  
+   Accepts `.csv` files or connects via real-time AQI APIs (e.g., IQAir, OpenWeather).
+
+2. **Choose prediction model**
+   - LSTM (for time-series forecasting)
+   - XGBoost (for feature-based prediction)
+   - Hybrid (combines both for improved accuracy)
+
+3. **View results**
+   - Visualize real-time AQI graphs (PM2.5, PM10, etc.)
+   - Explore historical trends and predictions up to 90 days
+
+4. **Export predictions**
+   - Download forecast data as `.csv`
+   - View past uploads and predictions from history tab
+
+---
+
+## 📊 Model Details
+
+- **LSTM**  
+  Long Short-Term Memory network trained on sequential AQI data. Ideal for forecasting based on past pollution trends.
+
+- **XGBoost**  
+  Gradient Boosted Trees trained on feature-rich datasets (temperature, humidity, traffic levels, etc.).
+
+- **Hybrid Approach**  
+  Combines temporal sequence learning from LSTM and feature importance ranking from XGBoost for more robust predictions.
+
+---
+
+## 🔐 License
+
+This project is licensed under the **MIT License**.  
+See the [`LICENSE`](./LICENSE) file for detailed terms.
+
+---
+
+## 🙌 Contributors
+
+- **Rishabh Raj**  
+  Developer, AI Researcher  
+  *Central University of South Bihar (CUSB)*
+
+- **Dr. Rina Singh**  
+  Project Supervisor, Scientist (TPE Division), CSIR-CRRI
+
+---
+
+## 📬 Contact
+
+- 📧 Email: [rishabh079singh@gmail.com](mailto:rishabh079singh@gmail.com)  
+- 🌍 Website: _coming soon_  
+- 🏫 Institution: Central University of South Bihar (CUSB)
+
+---
